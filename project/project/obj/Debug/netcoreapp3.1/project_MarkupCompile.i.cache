@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-C:\Users\simon\OneDrive\Desktop\John_Abbott_College\semester_3\Programming_3\project\project\obj\Debug\netcoreapp3.1\
+C:\Users\simon\Documents\prog_project\project\project\obj\Debug\netcoreapp3.1\
 project
 none
 false
 TRACE;DEBUG;NETCOREAPP;NETCOREAPP3_1;
-C:\Users\simon\OneDrive\Desktop\John_Abbott_College\semester_3\Programming_3\project\project\App.xaml
-11407045341
+C:\Users\simon\Documents\prog_project\project\project\App.xaml
+5-1848371025
 
-51236233042
+11-814071059
 192-1533232326
-MainWindow.xaml;
+AddItem.xaml;GeneralReport.xaml;MainWindow.xaml;ShoppingList.xaml;UpdateDelete.xaml;
 
 False
 

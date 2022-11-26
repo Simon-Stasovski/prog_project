@@ -1,0 +1,55 @@
+﻿<Window x:Class="project.UpdateDelete"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:project"
+        mc:Ignorable="d"
+        Title="UpdateDelete" Height="475" Width="300">
+    <Grid Background="LightSlateGray">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+        </Grid.RowDefinitions>
+
+        <TextBlock FontSize="16" Grid.Row="1" HorizontalAlignment="Center" Text="Item Name" Margin="0,10,0,10"/>
+        <TextBox x:Name="itemName" FontSize="16" Height="24" Grid.Row="2"  Width="100" Margin="0,0,0,0"/>
+        <TextBlock FontSize="16" Grid.Row="3" HorizontalAlignment="Center" Text="Min Quantity" Margin="0,10,0,10"/>
+        <TextBox x:Name="minQuantity" FontSize="16" Height="24" Grid.Row="4" Width="100" Margin="0,0,0,0"/>
+        <TextBlock FontSize="16"  Grid.Row="5" HorizontalAlignment="Center" Text="Available Quantity" Margin="0,10,0,10"/>
+        <TextBox x:Name="availableQuantity" FontSize="16" Height="24" Grid.Row="6" Width="100" Margin="0,0,0,0"/>
+        <TextBlock FontSize="16" Grid.Row="7" HorizontalAlignment="Center" Text="Location" Margin="0,10,0,10"/>
+        <TextBox x:Name="locationName" FontSize="16" Height="24" Grid.Row="8" Width="100" Margin="0,0,0,0"/>
+        <ComboBox Grid.Row="9" x:Name="supplierName" FontSize="16" Height="30" IsReadOnly="True" IsEditable="True" Text="Select Supplier" Width="150" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="0,25,0,15">
+            <ComboBoxItem Content="Costco"></ComboBoxItem>
+            <ComboBoxItem Content="Walmart"></ComboBoxItem>
+            <ComboBoxItem Content="ABC"></ComboBoxItem>
+            <ComboBoxItem Content="Other"></ComboBoxItem>
+        </ComboBox>
+        <ComboBox Grid.Row="10" x:Name="categoryName" IsReadOnly="True" IsEditable="True" Text="Select Category" FontSize="16" Width="150" Height="30" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="0,15,0,15">
+            <ComboBoxItem Content="Pantry"></ComboBoxItem>
+            <ComboBoxItem Content="Dairy"></ComboBoxItem>
+            <ComboBoxItem Content="Drinks"></ComboBoxItem>
+            <ComboBoxItem Content="Frozen Food"></ComboBoxItem>
+            <ComboBoxItem Content="Fruit &amp; Vegetable"></ComboBoxItem>
+            <ComboBoxItem Content="Bakery"></ComboBoxItem>
+            <ComboBoxItem Content="Cleaning Supplies"></ComboBoxItem>
+            <ComboBoxItem Content="Other"></ComboBoxItem>
+        </ComboBox>
+
+        <Button Content="Update" Click="ButtonUpd_Click" Grid.Row="11" Margin="-75,10,10,10" Height="25" Width="75"/>
+
+        <Button Content="Delete ❌" Click="ButtonRem_Click" Grid.Row="11" Margin="100,10,10,10" Height="25" Width="75"/>
+    </Grid>
+</Window>
